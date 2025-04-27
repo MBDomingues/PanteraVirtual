@@ -1,12 +1,13 @@
-
+/* Estilo geral para o body */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+    margin: 0; /* Remove margem padrão */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ocupa toda a altura da tela */
 }
 
 /* Container principal */
@@ -28,107 +29,92 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    justify-content: space-between; /* Espaçamento interno entre os itens */
+    height: auto; /* Ajusta automaticamente o tamanho */
 }
 
+/* Caixa de mensagens */
 .chat-box {
-    height: 300px;
-    overflow-y: auto;
-    border: 1px solid #555;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    height: 300px; /* Altura fixa para mensagens */
+    overflow-y: auto; /* Ativa rolagem vertical */
+    border: 1px solid #555; /* Borda cinza */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento externo */
+    border-radius: 5px; /* Cantos arredondados */
     background-color: #282828;
 }
 
+/* Input de texto */
 input[type="text"] {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
+    width: 70%; /* Ocupa 70% da largura */
+    padding: 12px; /* Espaçamento interno */
+    border: 1px solid #555; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-right: 10px; /* Espaço entre o botão */
+    background-color: #1e1e1e;
+    color: #fff; /* Texto branco */
 }
 
+/* Botão de enviar */
 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f8b400;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 12px 25px; /* Espaçamento interno do botão */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #f8b400; /* Cor laranja */
+    color: #000; /* Texto preto */
+    font-weight: bold; /* Negrito no texto */
+    cursor: pointer; /* Cursor em estilo botão */
+    transition: background-color 0.3s; /* Efeito de transição */
 }
 
+/* Efeito hover no botão */
 button:hover {
-    background-color: #ffaa00;
+    background-color: #ffaa00; /* Cor mais clara ao passar o mouse */
 }
 
 /* Estilo das mensagens */
 #chat-box div {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 80%;
-    word-wrap: break-word;
+    margin: 10px 0; /* Espaçamento entre mensagens */
+    padding: 10px; /* Espaçamento interno de cada mensagem */
+    border-radius: 5px; /* Cantos arredondados */
+    max-width: 80%; /* Limita largura máxima */
+    word-wrap: break-word; /* Quebra automática de texto */
 }
 
+/* Mensagens do usuário */
 .user {
-    background-color: #f8b400;
-    color: #000;
-    text-align: right;
-    align-self: flex-end;
+    background-color: #f8b400; /* Fundo laranja */
+    color: #000; /* Texto preto */
+    text-align: right; /* Alinha texto à direita */
+    align-self: flex-end; /* Posiciona à direita */
 }
 
+/* Mensagens do bot */
 .bot {
-    background-color: #282828;
-    color: #fff;
-    text-align: left;
-    align-self: flex-start;
+    background-color: #282828; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: left; /* Alinha texto à esquerda */
+    align-self: flex-start; /* Posiciona à esquerda */
 }
 
-/* Estilo geral para a caixa do chat */
-.chat-box {
-    width: 100%;
-    max-width: 600px; /* Limita a largura da caixa */
-    margin: auto; /* Centraliza horizontalmente */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #f9f9f9; /* Fundo da caixa */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 10px; /* Cantos arredondados */
-    display: flex;
-    flex-direction: column; /* Alinha itens verticalmente */
-    justify-content: center; /* Centraliza conteúdos */
-    align-items: center; /* Centraliza itens horizontalmente */
-}
-
-/* Estilo para o input de texto */
-#user-input {
-    width: 100%;
-    padding: 10px; /* Espaço interno do texto */
-    margin-bottom: 10px; /* Espaçamento abaixo */
-    border-radius: 5px; /* Cantos arredondados */
-    border: 1px solid #ccc; /* Borda do campo */
-}
-
-/* Estilo para o botão de enviar */
-#send-button {
-    width: 100%;
-    padding: 10px; /* Espaço interno do botão */
-    background-color: #0096fa; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor em forma de botão */
-}
-
-/* Efeito hover no botão de enviar */
-#send-button:hover {
-    background-color: #0078d4; /* Cor ao passar o mouse */
-}
-
-/* Estilo do Blip Chat (Renderizado como iframe) */
+/* Estilo geral para iframe do Blip Chat */
 .chat-box iframe {
-    width: 100%; /* Ocupar a largura total do container */
-    height: 400px; /* Altura fixa para o chat */
-    border: none; /* Remove bordas externas */
-    border-radius: 10px; /* Cantos arredondados para harmonizar */
+    width: 100%; /* Ocupar largura total */
+    height: 300px; /* Altura ajustada */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    input[type="text"], button {
+        width: 100%; /* Ambos ocupam 100% da largura no mobile */
+        margin: 5px 0; /* Espaçamento entre eles */
+    }
+
+    .chat-box {
+        height: 250px; /* Altura reduzida */
+    }
 }
