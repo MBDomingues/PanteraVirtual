@@ -18,8 +18,18 @@
         <!-- Caixa de texto para o chat -->
         <div class="chat">
             <div class="chat-box" id="chat-box">
-                <!-- Mensagens do chat aparecerão aqui -->
+                <!-- Renderizar o Blip diretamente aqui -->
+                <script src="https://unpkg.com/blip-chat-widget"></script>
+                <script>
+                    (function () {
+                        new BlipChat()
+                            .withAppKey('cXVpemZ1cmlhOjhkM2MxZTkyLWEzYjktNDM4Ny1iYjVlLTljNDQwYjkyZDFkYg==')
+                            .withTarget('chat-box') // Renderizar dentro da 'chat-box'
+                            .build();
+                    })();
+                </script>
             </div>
+        </div>
             <input type="text" id="user-input" placeholder="Digite sua resposta..." />
             <button id="send-button">Enviar</button>
         </div>

@@ -53,7 +53,6 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #f8b400;
-    /* Amarelo FURIA */
     color: #000;
     font-weight: bold;
     cursor: pointer;
@@ -86,34 +85,50 @@ button:hover {
     align-self: flex-start;
 }
 
-/* Estilo geral do chat box */
-#chat-box div {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 70%;
-    /* Limita a largura das mensagens */
-    word-wrap: break-word;
-    display: inline-block;
-    /* Garante que seja tratado como conteúdo em linha */
+/* Estilo geral para a caixa do chat */
+.chat-box {
+    width: 100%;
+    max-width: 600px; /* Limita a largura da caixa */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Fundo da caixa */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    justify-content: center; /* Centraliza conteúdos */
+    align-items: center; /* Centraliza itens horizontalmente */
 }
 
-/* Mensagens do bot (perguntas) */
-.bot {
-    background-color: #282828;
-    color: #fff;
-    text-align: left;
-    /* Alinha à esquerda */
-    align-self: flex-start;
-    /* Posiciona na esquerda */
+/* Estilo para o input de texto */
+#user-input {
+    width: 100%;
+    padding: 10px; /* Espaço interno do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo */
+    border-radius: 5px; /* Cantos arredondados */
+    border: 1px solid #ccc; /* Borda do campo */
 }
 
-/* Mensagens do usuário (respostas) */
-.user {
-    background-color: #f8b400;
-    color: #000;
-    text-align: right;
-    /* Alinha o texto à direita */
-    align-self: flex-end;
-    /* Posiciona na direita */
+/* Estilo para o botão de enviar */
+#send-button {
+    width: 100%;
+    padding: 10px; /* Espaço interno do botão */
+    background-color: #0096fa; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em forma de botão */
+}
+
+/* Efeito hover no botão de enviar */
+#send-button:hover {
+    background-color: #0078d4; /* Cor ao passar o mouse */
+}
+
+/* Estilo do Blip Chat (Renderizado como iframe) */
+.chat-box iframe {
+    width: 100%; /* Ocupar a largura total do container */
+    height: 400px; /* Altura fixa para o chat */
+    border: none; /* Remove bordas externas */
+    border-radius: 10px; /* Cantos arredondados para harmonizar */
 }

@@ -1,0 +1,17 @@
+{
+  "name": "hltv-furia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "hltv": "^3.5.0",
+    "hltv-api": "^3.0.3"
+  }
+}
