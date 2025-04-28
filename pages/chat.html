@@ -21,6 +21,9 @@
                 <!-- Renderizar o Blip diretamente aqui -->
                 <script src="https://unpkg.com/blip-chat-widget"></script>
                 <script>
+                    
+                    localStorage.clear(); // Remove dados locais
+                    sessionStorage.clear(); // Remove dados da sessão
                     (function () {
                         new BlipChat()
                             .withAppKey('cXVpemZ1cmlhOjhkM2MxZTkyLWEzYjktNDM4Ny1iYjVlLTljNDQwYjkyZDFkYg==')
