@@ -1,9 +1,7 @@
 /* Estilo da Página Inicial */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
-    /* Fundo escuro */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -26,7 +24,6 @@ body {
 h1 {
     font-size: 2rem;
     color: #f8b400;
-    /* Amarelo FURIA */
     margin-bottom: 15px;
 }
 
