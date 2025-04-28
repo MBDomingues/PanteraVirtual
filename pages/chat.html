@@ -25,6 +25,10 @@
                         new BlipChat()
                             .withAppKey('cXVpemZ1cmlhOjhkM2MxZTkyLWEzYjktNDM4Ny1iYjVlLTljNDQwYjkyZDFkYg==')
                             .withTarget('chat-box') // Renderizar dentro da 'chat-box'
+                            /* Gera um ID único a cada carregamento */
+                            .withAccount({
+                                id: Math.random().toString(36).substr(2, 9)
+                            })
                             .build();
                     })();
                 </script>
