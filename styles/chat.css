@@ -1,47 +1,56 @@
-/* Estilo geral para o body */
+/* Estilo para o body */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
-    margin: 0; /* Remove margem padrão */
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh;
 }
 
-/* Container principal */
-.container {
-    text-align: center;
-    width: 90%;
-}
-
-/* Estilo da logo */
-.logo img {
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-/* Área do chat */
-.chat {
+/* Contêiner principal */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 100vh;
     background-color: #1e1e1e;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header com a logo */
+.chat-header {
     display: flex;
-    flex-direction: column; /* Alinha itens verticalmente */
-    justify-content: space-between; /* Espaçamento interno entre os itens */
-    height: auto; /* Ajusta automaticamente o tamanho */
-}
-
-/* Caixa de mensagens */
-.chat-box {
-    height: 500px; /* Altura fixa para mensagens */
-    overflow-y: auto; /* Ativa rolagem vertical */
-    border: 1px solid #555; /* Borda cinza */
-    padding: 15px; /* Espaçamento interno */
-    margin-bottom: 15px; /* Espaçamento externo */
-    border-radius: 5px; /* Cantos arredondados */
+    align-items: center;
+    padding: 10px;
     background-color: #282828;
+    border-bottom: 1px solid #555;
 }
 
+.chat-header img {
+    width: 50px;
+}
+
+/* Área principal do chat */
+.chat-main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-box {
+    height: 100vh;
+    border: 1px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
