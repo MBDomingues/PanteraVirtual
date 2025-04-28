@@ -14,13 +14,12 @@ body {
 .container {
     text-align: center;
     width: 90%;
-    max-width: 600px;
 }
 
 /* Estilo da logo */
 .logo img {
-    width: 200px;
-    margin-bottom: 20px;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 /* Área do chat */
@@ -37,7 +36,7 @@ body {
 
 /* Caixa de mensagens */
 .chat-box {
-    height: 300px; /* Altura fixa para mensagens */
+    height: 500px; /* Altura fixa para mensagens */
     overflow-y: auto; /* Ativa rolagem vertical */
     border: 1px solid #555; /* Borda cinza */
     padding: 15px; /* Espaçamento interno */
@@ -46,75 +45,3 @@ body {
     background-color: #282828;
 }
 
-/* Input de texto */
-input[type="text"] {
-    width: 70%; /* Ocupa 70% da largura */
-    padding: 12px; /* Espaçamento interno */
-    border: 1px solid #555; /* Borda cinza */
-    border-radius: 5px; /* Cantos arredondados */
-    margin-right: 10px; /* Espaço entre o botão */
-    background-color: #1e1e1e;
-    color: #fff; /* Texto branco */
-}
-
-/* Botão de enviar */
-button {
-    padding: 12px 25px; /* Espaçamento interno do botão */
-    border: none; /* Remove bordas padrão */
-    border-radius: 5px; /* Cantos arredondados */
-    background-color: #f8b400; /* Cor laranja */
-    color: #000; /* Texto preto */
-    font-weight: bold; /* Negrito no texto */
-    cursor: pointer; /* Cursor em estilo botão */
-    transition: background-color 0.3s; /* Efeito de transição */
-}
-
-/* Efeito hover no botão */
-button:hover {
-    background-color: #ffaa00; /* Cor mais clara ao passar o mouse */
-}
-
-/* Estilo das mensagens */
-#chat-box div {
-    margin: 10px 0; /* Espaçamento entre mensagens */
-    padding: 10px; /* Espaçamento interno de cada mensagem */
-    border-radius: 5px; /* Cantos arredondados */
-    max-width: 80%; /* Limita largura máxima */
-    word-wrap: break-word; /* Quebra automática de texto */
-}
-
-/* Mensagens do usuário */
-.user {
-    background-color: #f8b400; /* Fundo laranja */
-    color: #000; /* Texto preto */
-    text-align: right; /* Alinha texto à direita */
-    align-self: flex-end; /* Posiciona à direita */
-}
-
-/* Mensagens do bot */
-.bot {
-    background-color: #282828; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-    text-align: left; /* Alinha texto à esquerda */
-    align-self: flex-start; /* Posiciona à esquerda */
-}
-
-/* Estilo geral para iframe do Blip Chat */
-.chat-box iframe {
-    width: 100%; /* Ocupar largura total */
-    height: 300px; /* Altura ajustada */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Cantos arredondados */
-}
-
-/* Responsividade para dispositivos menores */
-@media (max-width: 768px) {
-    input[type="text"], button {
-        width: 100%; /* Ambos ocupam 100% da largura no mobile */
-        margin: 5px 0; /* Espaçamento entre eles */
-    }
-
-    .chat-box {
-        height: 250px; /* Altura reduzida */
-    }
-}
