@@ -1,0 +1,81 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do container */
+.container {
+    background-color: #1E1E1E;
+    border: 2px solid #292929;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFC107;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o texto */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o código */
+.codigo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+    background-color: #2A2A2A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Estilo para a área social */
+.social {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #E0E0E0
+;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #FFA000;
+}
+
+.instagram-icon {
+    width: 32px;
+    /* Tamanho do ícone */
+    height: 32px;
+    margin-right: 10px;
+}
