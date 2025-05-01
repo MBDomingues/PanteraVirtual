@@ -25,7 +25,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## Telas da Página 💻
 ![alt text](images/image-inicio.png)
 ![alt text](images/image-chat.png)
-![alt text](images/image-inicio.png)
+![alt text](images/image-codigo.png)
 
 ## 🌐 Demonstração
 
