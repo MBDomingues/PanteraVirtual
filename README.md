@@ -18,7 +18,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-- 🔹 **Blip** – Chatbot interativo para interação com os fãs.
+
+- 🔹 **Blip** – Chatbot interativo para interação com os fãs, saiba mais sobre a configuração aqui:  
+[**README do blip**](Blip/README.md)
 
 ## Telas da Página 💻
 ![alt text](images/image-inicio.png)
