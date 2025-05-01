@@ -21,9 +21,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - 🔹 **Blip** – Chatbot interativo para interação com os fãs.
 
 ## Telas da Página 💻
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](images/image-inicio.png)
+![alt text](images/image-chat.png)
+![alt text](images/image-inicio.png)
 
 ## 🌐 Demonstração
 
